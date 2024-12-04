@@ -1,0 +1,47 @@
+{
+  "name": "@bitobeats/simple-event-target",
+  "private": false,
+  "version": "0.1.4",
+  "type": "module",
+  "description": "A lightweight TypeScript library for creating type-safe event-driven classes with an API mirroring the browser's EventListener. Offers streamlined event management with no dependencies.",
+  "license": "MIT",
+  "keywords": [
+    "event",
+    "listener",
+    "target",
+    "emitter"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitobeats/simple-event-target"
+  },
+  "files": [
+    "./dist"
+  ],
+  "types": "./dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/simple-event-target.js",
+      "require": "./dist/simple-event-target.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "bench": "vitest bench"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^1.6.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.2",
+    "vite-plugin-dts": "^4.3.0",
+    "vitest": "^1.6.0"
+  },
+  "packageManager": "pnpm@9.14.4+sha512.c8180b3fbe4e4bca02c94234717896b5529740a6cbadf19fa78254270403ea2f27d4e1d46a08a0f56c89b63dc8ebfd3ee53326da720273794e6200fcf0d184ab"
+}
