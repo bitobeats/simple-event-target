@@ -1,7 +1,7 @@
 {
   "name": "@bitobeats/simple-event-target",
   "private": false,
-  "version": "0.1.4",
+  "version": "0.1.5",
   "type": "module",
   "description": "A lightweight TypeScript library for creating type-safe event-driven classes with an API mirroring the browser's EventListener. Offers streamlined event management with no dependencies.",
   "license": "MIT",
@@ -21,11 +21,11 @@
   "files": [
     "./dist"
   ],
-  "types": "./dist/main.d.ts",
   "exports": {
     ".": {
       "import": "./dist/simple-event-target.js",
-      "require": "./dist/simple-event-target.umd.cjs"
+      "require": "./dist/simple-event-target.umd.cjs",
+      "types": "./dist/main.d.ts"
     }
   },
   "scripts": {
