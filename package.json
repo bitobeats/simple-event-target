@@ -23,9 +23,9 @@
   ],
   "exports": {
     ".": {
+      "types": "./dist/main.d.ts",
       "import": "./dist/simple-event-target.js",
-      "require": "./dist/simple-event-target.umd.cjs",
-      "types": "./dist/main.d.ts"
+      "require": "./dist/simple-event-target.umd.cjs"
     }
   },
   "scripts": {
